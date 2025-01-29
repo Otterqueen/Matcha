@@ -48,6 +48,8 @@ module.exports={
                         con.query(sql, [[value]], (err, res) => {if(err) throw(err)});
 
                         var sql = "INSERT INTO `preference` (id_user) VALUE ?"
+                        console.log("value = " + value);
+                        //TODO check si id recup correctement
                         var value = [results[0].id];
                         con.query(sql, [[value]], (err, res) => {if(err) throw(err)});
 

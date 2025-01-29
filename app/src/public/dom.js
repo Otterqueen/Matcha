@@ -232,6 +232,10 @@ function auto_compl(){
             prenom.value = profil[0].prenom;
             ville.value = profil[0].city;
             arr.value = profil[0].arr;
+
+            console.log("profil[0]" + profil[0]);
+            console.log("profil[0].sexe" + profil[0].sexe);
+
             if(profil[0].sexe == 1)
                 document.getElementById("femme").checked = true;
             else
